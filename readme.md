@@ -13,4 +13,4 @@ Feel free to google search, import libraries, or use any other tools that you wo
 
 1. Add the missing type definition for `RhombusDevice` in `src/assets/devices.ts`
 2. Fill in the blanks in `App.tsx` to render a layout of device cards
-3. Build a form that calls `src/state/registerDevice.ts` API to add a new device to the list
+3. Build a form that calls the `src/state/registerDevice.ts` mock API to add a new device to the list
