@@ -4,7 +4,8 @@ export default function registerDevice(device: CreateDevice) {
     const isValidDevice = validateDevice(device);
 
     setTimeout(() => {
-      if (apiCallFailed || !isValidDevice) reject(new Error("An unexpected network error occurred"));
+      if (apiCallFailed) reject(new Error("An unexpected network error occurred"));
+      else if (!isValidDevice) reject(new Error("Bad request, unable to register device"));
       else resolve({ deviceId: generateDeviceId() });
     }, 500)
   })
