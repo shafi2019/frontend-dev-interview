@@ -1,3 +1,96 @@
-.cardContainer {
-
-}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f6f9; /* Light gray for better contrast */
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Cleaner font */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    margin-bottom: 30px;
+    padding: 25px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 123, 255, 0.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .form:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+  }
+  
+  input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  button {
+    padding: 12px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+    transform: scale(1.05); /* Slight scaling for emphasis */
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 12px;
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 123, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 123, 255, 0.2);
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  

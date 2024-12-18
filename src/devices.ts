@@ -1,4 +1,16 @@
-export type RhombusDevice = any;
+export type RhombusDevice = {
+  name: string;
+  serialNumber: string;
+  id: string;
+  deviceType: string;
+  maxBitrate?: number;
+  hardwareType?: string;
+  disconnected?: boolean;
+  microphoneEnabled?: boolean;
+  speakerEnabled?: boolean
+  temperatureCelsius?: number;
+  humidityPermyriad?: number;
+};
 
 // Dummy data
 export const mockDevices: RhombusDevice[] = [
