@@ -1,4 +1,4 @@
-export default function registerDevice(device: CreateDevice) {
+export default function registerDevice(device: RegisterDevice) {
   return new Promise<{ deviceId: string }>((resolve, reject) => {
     const apiCallFailed = getMockApiCallFailed();
     const isValidDevice = validateDevice(device);
@@ -22,8 +22,8 @@ function generateDeviceId() {
     .join("");
 }
 
-type CreateDevice = { name: string; serialNumber: string; deviceType: string; };
+type RegisterDevice = { name: string; serialNumber: string; deviceType: string; };
 
-function validateDevice(device: CreateDevice) {
+function validateDevice(device: RegisterDevice) {
   return !!device.name && !!device.serialNumber && !!device.deviceType;
 }
